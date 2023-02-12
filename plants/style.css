@@ -1,16 +1,358 @@
+/* GENEREL */
+
 body {
     margin: 0 auto;
     padding: 0;
+
+    display: flex;
+    flex-direction: column;
+
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 100%;
     width: 100vw;
     height: 100vh;
 }
 
 .plants {
+    display: flex;
+    flex-direction: column;
+
     width: 100%;
-    height: 100%;
+    min-height: 100%;
+    background-color: #EDF2EC;
+    color:#636060;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px; 
+}
+
+/* GENEREL END*/
+
+
+/* NAVIGATION */
+
+section {
+    display: flex;
 }
 
 .navbar {
-    width: 100%;
-    height: 10%;
+    position: relative;
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    height: 134px;
+    margin: 0;
+    padding-right: 50px;
 }
+a {
+    color: #010201;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #E06733;
+}
+
+.navbar a {
+    margin: 1em;
+}
+h4 {
+    color: #E06733;
+}
+
+/* NAVIGATION END*/
+
+
+/********** SECTIONS ************/
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/***WELCOME***/
+
+.welcomeContainer {
+
+    height: 532px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.welcomeContainer div {
+    width: 50%;
+}
+#welcomeText {
+    justify-content: flex-end;
+}
+
+/*** WELCOME END ***/
+
+
+/*** ABOUT ***/
+
+.aboutContainer {
+    background: #FFFFFF; 
+    height: 666px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.aboutContainer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.aboutContainer p {
+    margin: 40px;
+}
+.aboutContainer h2 {
+    color: #499A18;
+    font-family: 'Inika';
+}
+
+/*** ABOUT END ***/
+
+
+/*** SERVICE ***/
+
+.serviceContainer {
+    background: #EDF2EC; 
+    height: 1300px;
+}
+
+.serviceContainer button{
+    margin-top: 40px;
+}
+
+ #serviceHeader {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.serviceContainer #photosContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+#photosContainer p {
+    margin-top: -10px;
+}
+
+#photosContainer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 330px;
+    margin-left: 30px;
+    margin-top: 40px;
+    border: 1px solid gray;
+    border-radius: 20px;   
+}
+
+/*** SERVICE END ***/
+
+
+/*** PRICES ***/
+
+.pricesContainer {
+    height: 560px;
+    background: #FFFFFF; 
+    color: black;
+}
+.pricesTopContent {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.pricesBottomContent {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.pricesContainer h2 {
+    margin-left: 2em;
+    overflow: auto;   
+
+}
+
+#buttonPricesContact a{
+    color: #E06733;
+}
+
+#buttonPricesContact a:hover {
+    color: white;
+}
+
+/*** PRICES END ***/
+
+
+/*** CONTACTS ***/
+
+.contactsSection {
+    background-color: #E3E1D5;
+}
+
+.contactsSection h2 {
+    color: #499A18;
+    text-align: center;
+
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+}
+
+.contactsImg {
+    vertical-align: bottom;
+    width: 400px;
+    height: 500px;
+}
+
+#contactsContent {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+/*** CONTACTS END ***/
+
+
+/*** FOOTER ***/
+
+
+footer {
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+    width: 100%;
+    height: 130px;;
+    background: #FFFFFF;
+}
+
+footer h4 {
+    text-align: center;
+}
+
+/*** FOOTER END ***/
+
+
+/**********************/
+
+
+/* BUTTONS */
+
+ button {
+    box-sizing: border-box;
+
+    width: 158px;
+    height: 44px;
+
+    background: #EDF2EC;
+    border: 2px solid #E06733;
+    border-radius: 10px;
+} 
+
+button:hover {
+    color: white;
+    background-color: #E06733;
+}
+
+#buttonMenu {
+    margin-left: 100px;
+    width: 330px;
+    height: 285px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+}
+#buttonMenu button {
+    margin-bottom: 10px;
+}
+
+#buttonPricesContact {
+    margin-right: 200px;
+}
+
+/* BUTTONS END*/
+
+/* INPUTS */
+
+input {
+    width: 450px;
+    height: 50px;
+    margin-right: 110px;
+
+    background-color: #EDF2EC;
+    box-shadow: 0px 4px 4px rdba(0, 0, 0, 0.25);
+    border-radius: 0px;
+}
+
+input::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;  
+
+   
+    letter-spacing: 0.05em;
+
+    color: #717171;
+}
+
+/* INPUTS END */
+
