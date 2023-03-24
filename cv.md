@@ -14,6 +14,7 @@ Feel free to explore my git and take a look at my other [projects](https://githu
 * JavaScript (Basic)
 * Grafana
 * Slack
+* CRM
 
 ## Code Example
 
