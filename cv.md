@@ -32,8 +32,7 @@ console.log (getRandomNumber(20) );
 
 
 ## Experience
-* 2019 - 2023:
-+ Account manager (crypto-project)
+* 2019 - 2023: Account manager (crypto-project)
 
 ## Education
 * Kazan Federal University, bachelor of linguistics
